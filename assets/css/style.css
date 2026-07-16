@@ -3,55 +3,59 @@
    ========================================================================== */
 
 
-/* ── Custom cursor ─────────────────────────────────────────────────────── */
-/* Hide default cursor on desktop only */
+/* ── Custom cursor — desktop/trackpad only (pointer: fine) ─────────────── */
 @media (pointer: fine) {
   *, *::before, *::after { cursor: none !important; }
+
+  .cursor-dot {
+    position: fixed;
+    top: 0; left: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--blue);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease, background 0.2s ease;
+    box-shadow: 0 0 8px rgba(0, 129, 254, 0.9);
+    will-change: left, top;
+  }
+
+  .cursor-ring {
+    position: fixed;
+    top: 0; left: 0;
+    width: 38px;
+    height: 38px;
+    border: 1.5px solid rgba(0, 129, 254, 0.55);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 14px rgba(0, 129, 254, 0.25), inset 0 0 6px rgba(0, 129, 254, 0.08);
+    will-change: left, top;
+  }
+
+  /* Grow ring + brighten when hovering links/buttons */
+  .cursor-ring.is-hovering {
+    width: 56px;
+    height: 56px;
+    border-color: rgba(0, 129, 254, 0.85);
+    box-shadow: 0 0 22px rgba(0, 129, 254, 0.5), inset 0 0 10px rgba(0, 129, 254, 0.15);
+  }
+
+  .cursor-dot.is-hovering {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.8);
+  }
 }
 
-.cursor-dot {
-  position: fixed;
-  top: 0; left: 0;
-  width: 8px;
-  height: 8px;
-  background: var(--blue);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease, background 0.2s ease;
-  box-shadow: 0 0 8px rgba(0, 129, 254, 0.9);
-  will-change: left, top;
-}
-
-.cursor-ring {
-  position: fixed;
-  top: 0; left: 0;
-  width: 38px;
-  height: 38px;
-  border: 1.5px solid rgba(0, 129, 254, 0.55);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 14px rgba(0, 129, 254, 0.25), inset 0 0 6px rgba(0, 129, 254, 0.08);
-  will-change: left, top;
-}
-
-/* Grow ring + brighten when hovering links/buttons */
-.cursor-ring.is-hovering {
-  width: 56px;
-  height: 56px;
-  border-color: rgba(0, 129, 254, 0.85);
-  box-shadow: 0 0 22px rgba(0, 129, 254, 0.5), inset 0 0 10px rgba(0, 129, 254, 0.15);
-}
-
-.cursor-dot.is-hovering {
-  width: 6px;
-  height: 6px;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(255,255,255,0.8);
+/* Touch devices: hide cursor elements entirely */
+@media (pointer: coarse) {
+  .cursor-dot, .cursor-ring { display: none !important; }
 }
 
 

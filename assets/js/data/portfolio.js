@@ -11,7 +11,7 @@
 export const PORTFOLIO = [
   {
     initials: 'MH',
-    name: 'Metta Home Villa',
+    name: 'mettā house',
     location: 'Weligama',
     tags: ['Photography', 'Social Media'],
     year: 2024,
