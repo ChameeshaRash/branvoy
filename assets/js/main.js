@@ -18,19 +18,19 @@
    ========================================================================== */
 
 /* ── Page renderers ─────────────────────────────────────────────────────── */
-import { renderAbout }     from './pages/about.js';
-import { renderServices }  from './pages/services.js';
-import { renderPortfolio } from './pages/portfolio.js';
-import { renderReviews }   from './pages/reviews.js';
-import { renderContact }   from './pages/contact.js';
+import { renderAbout }     from './pages/about.js?v=30';
+import { renderServices }  from './pages/services.js?v=30';
+import { renderPortfolio } from './pages/portfolio.js?v=30';
+import { renderReviews }   from './pages/reviews.js?v=30';
+import { renderContact }   from './pages/contact.js?v=30';
 
 /* ── Feature modules ────────────────────────────────────────────────────── */
-import { initCursor }   from './cursor.js';
-import { initRouter }   from './router.js';
-import { initNavbar }   from './navbar.js';
-import { initForm }     from './form.js';
-import { initLightbox } from './lightbox.js';
-import { initLikes }    from './likes.js';
+import { initCursor }   from './cursor.js?v=30';
+import { initRouter }   from './router.js?v=30';
+import { initNavbar }   from './navbar.js?v=30';
+import { initForm }     from './form.js?v=30';
+import { initLightbox } from './lightbox.js?v=30';
+import { initLikes }    from './likes.js?v=30';
 
 /* ── 1. Render all page sections (home page stays in HTML for instant load) */
 renderAbout();
