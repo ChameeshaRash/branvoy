@@ -20,7 +20,7 @@
 /* ── Page renderers ─────────────────────────────────────────────────────── */
 import { renderAbout }     from './pages/about.js?v=30';
 import { renderServices }  from './pages/services.js?v=30';
-import { renderPortfolio } from './pages/portfolio.js?v=30';
+import { renderPortfolio } from './pages/portfolio-tl.js?v=30';
 import { renderReviews }   from './pages/reviews.js?v=30';
 import { renderContact }   from './pages/contact.js?v=30';
 
