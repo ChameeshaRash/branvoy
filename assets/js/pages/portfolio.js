@@ -1,12 +1,12 @@
 /* ==========================================================================
-   Branvoy — pages/portfolio.js
+   Branvoy — pages/portfolio.js  v30
    Vertical timeline layout: project entries on a centre spine with the
    8 gallery photos scattered left / right between them.
    To add a project → data/portfolio.js  |  To add a photo → data/gallery.js
    ========================================================================== */
 
-import { PORTFOLIO } from '../data/portfolio.js';
-import { GALLERY }   from '../data/gallery.js';
+import { PORTFOLIO } from '../data/portfolio.js?v=30';
+import { GALLERY }   from '../data/gallery.js?v=30';
 
 /* ------------------------------------------------------------------
    TL_LAYOUT  — one entry per portfolio item (same index order)
