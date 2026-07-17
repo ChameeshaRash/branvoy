@@ -24,6 +24,15 @@ export function initRouter() {
     navLinks.forEach(link =>
       link.classList.toggle('active-link', link.dataset.page === pageId)
     );
+
+    /* GA4 — fire a page_view for each SPA navigation */
+    if (typeof gtag === 'function') {
+      gtag('event', 'page_view', {
+        page_title:    pageId.charAt(0).toUpperCase() + pageId.slice(1),
+        page_location: window.location.href,
+        page_path:     '/' + (pageId === 'home' ? '' : pageId),
+      });
+    }
   }
 
   /* Delegate all [data-page] clicks on the document */

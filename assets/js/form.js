@@ -23,7 +23,16 @@ export function initForm() {
     })
     .then(res => {
       btn.textContent = res.ok ? 'Message Sent ✓' : 'Something went wrong';
-      if (res.ok) form.reset();
+      if (res.ok) {
+        form.reset();
+        /* GA4 conversion — contact form submitted */
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', {
+            event_category: 'Contact',
+            event_label:    'Contact Form Submission',
+          });
+        }
+      }
     })
     .catch(() => {
       btn.textContent = 'Something went wrong';
