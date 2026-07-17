@@ -7,7 +7,7 @@ export const REVIEWS = [
   {
     initial: 'E',
     name: 'Emalsha Rasad',
-    role: 'Owner, Metta Home Villa — Weligama',
+    role: 'Owner, mettā house — Weligama',
     text: 'Branvoy completely changed how Metta Home looks online. The photography captured the real vibe of our villa and our Instagram started getting genuine booking inquiries we\'d never had before. Everything feels consistent, professional, and exactly on-brand.',
   },
   {
@@ -24,8 +24,8 @@ export const REVIEWS = [
   },
   {
     initial: 'M',
-    name: 'Munchee Surf Camp',
+    name: 'Munchee\'s Surf Club',
     role: 'Owner — Arugam Bay',
-    text: 'We needed help getting our social media accounts properly set up and optimized. Branvoy sorted everything quickly and professionally. Our profiles now look credible and attract the right audience. Great team to work with.',
+    text: 'Working with Branvoy has been one of the best moves for Munchee\'s Surf Club. They handle our content, social media, and all the tech side we never had time for. The reels they produce are high quality and actually get views. Very professional team.',
   },
 ];

@@ -16,15 +16,15 @@ import { GALLERY }   from '../data/gallery.js?v=30';
              false → project text on RIGHT, photos on LEFT
 ------------------------------------------------------------------ */
 const TL_LAYOUT = [
-  { photos: [0, 1], textLeft: false }, // 01 Metta Home Villa
+  { photos: [0, 1], textLeft: false }, // 01 mettā house
   { photos: [],     textLeft: true  }, // 02 Yaka Surf Club
-  { photos: [2],    textLeft: false }, // 03 Beach Break Hostel
-  { photos: [3, 4], textLeft: true  }, // 04 Munchee Surf Camp
+  { photos: [2],    textLeft: false }, // 03 Beach Break Hostel & Restaurant
+  { photos: [3, 4], textLeft: true  }, // 04 Melinda — Agency Project
   { photos: [],     textLeft: false }, // 05 Daymoon Surfing School
-  { photos: [5],    textLeft: true  }, // 06 Beach Break Surf Camp
-  { photos: [6, 7], textLeft: false }, // 07 Melinda Agency
-  { photos: [],     textLeft: true  }, // 08 Lara Personal Brand
-  { photos: [],     textLeft: false }, // 09 The Grill Bar
+  { photos: [5],    textLeft: true  }, // 06 The Grill Bar Restaurant
+  { photos: [6, 7], textLeft: false }, // 07 Lara — Personal Brand
+  { photos: [],     textLeft: true  }, // 08 Munchee Surf Camp
+  { photos: [],     textLeft: false }, // 09 Beach Break Surf Camp
 ];
 
 /* Zoom icon shown on hover — clicking opens the lightbox */
@@ -104,6 +104,7 @@ export function renderPortfolio() {
           <span class="eyebrow">Portfolio</span>
           <h2>Brands we've<br><em>worked with</em></h2>
           <p>From surf camps to villas, restaurants to personal brands — a snapshot of the projects we've had the honour to be part of.</p>
+          <p class="tl-photo-note">✦ Photos shown are candid moments from our work — not tied to any single project.</p>
         </div>
       </div>
 

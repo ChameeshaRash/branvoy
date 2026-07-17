@@ -921,6 +921,14 @@ section { padding: 90px 0; }
 
 .tl-header p { color: var(--muted); max-width: 460px; margin: 0 auto; }
 
+.tl-photo-note {
+  margin-top: 18px !important;
+  font-size: 12px !important;
+  letter-spacing: 0.03em;
+  opacity: 0.55;
+  font-style: italic;
+}
+
 /* Body — the scrollable timeline container */
 .tl-body {
   position: relative;
