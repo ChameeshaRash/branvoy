@@ -1139,7 +1139,7 @@ section { padding: 90px 0; }
   .tl-side--left  { grid-column: 2; grid-row: 1; padding: 0 0 0 12px; }
   .tl-side--right { grid-column: 2; grid-row: 2; padding: 12px 0 0 12px; }
   /* Photos become static horizontal pair on mobile */
-  .tl-photos { min-height: auto !important; display: flex; gap: 8px; }
+  .tl-photos { min-height: auto !important; display: flex; gap: 16px; }
   .tl-photo  { position: relative; flex: 1; height: 120px !important; width: auto !important; border-radius: 7px; }
 }
 
