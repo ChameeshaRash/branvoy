@@ -32,7 +32,7 @@ export function renderContact() {
         </div>
 
         <form id="contactForm" action="https://formspree.io/f/mykqpjja" method="POST" novalidate>
-          <input type="hidden" name="_cc" value="chameesha@branvoy.com" />
+          <input type="hidden" name="_cc" value="chamrashani@gmail.com" />
           <input type="text"  name="name"    placeholder="Your Name"  required />
           <input type="email" name="email"   placeholder="Your Email" required />
           <select name="service" required>
