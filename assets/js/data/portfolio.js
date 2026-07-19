@@ -35,7 +35,7 @@ export const PORTFOLIO = [
   },
   {
     initials: 'ME',
-    name: 'Melinda — Agency Project',
+    name: 'Melinda · Agency Project',
     location: 'Sri Lanka',
     tags: ['Filming', 'Editing'],
     year: 2025,
@@ -59,7 +59,7 @@ export const PORTFOLIO = [
   },
   {
     initials: 'LA',
-    name: 'Lara — Personal Brand',
+    name: 'Lara · Personal Brand',
     location: 'Sri Lanka',
     tags: ['Brand Identity', 'Product Design', 'Photography', 'Videography', 'Social Media'],
     year: 2026,

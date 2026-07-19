@@ -5,8 +5,8 @@
    To add a project → data/portfolio.js  |  To add a photo → data/gallery.js
    ========================================================================== */
 
-import { PORTFOLIO } from '../data/portfolio.js?v=30';
-import { GALLERY }   from '../data/gallery.js?v=30';
+import { PORTFOLIO } from '../data/portfolio.js?v=42';
+import { GALLERY }   from '../data/gallery.js?v=42';
 
 /* ------------------------------------------------------------------
    TL_LAYOUT  — one entry per portfolio item (same index order)
@@ -86,7 +86,7 @@ function tlNode(item, i) {
   const rightContent = textLeft ? photosHtml : textHtml;
 
   return `
-    <div class="tl-node">
+    <div class="tl-node" data-reveal>
       <div class="tl-side tl-side--left">${leftContent}</div>
       <div class="tl-center"><span class="tl-dot"></span></div>
       <div class="tl-side tl-side--right">${rightContent}</div>
@@ -100,11 +100,11 @@ export function renderPortfolio() {
   el.innerHTML = `
     <section class="tl-section">
       <div class="wrap">
-        <div class="tl-header">
+        <div class="tl-header" data-reveal>
           <span class="eyebrow">Portfolio</span>
           <h2>Brands we've<br><em>worked with</em></h2>
-          <p>From surf camps to villas, restaurants to personal brands — a snapshot of the projects we've had the honour to be part of.</p>
-          <p class="tl-photo-note">✦ Photos shown are candid moments from our work — not tied to any single project.</p>
+          <p>From surf camps to villas, restaurants to personal brands, here is a snapshot of the projects we've had the honour to be part of.</p>
+          <p class="tl-photo-note">✦ Photos shown are candid moments from our work, not tied to any single project.</p>
         </div>
       </div>
 
@@ -113,7 +113,7 @@ export function renderPortfolio() {
       </div>
 
       <div class="wrap">
-        <div class="page-cta">
+        <div class="page-cta" data-reveal>
           <p style="color:var(--muted);margin-bottom:20px;">Like what you see? Let's create something together.</p>
           <a href="#" data-page="contact" class="btn btn-primary">Start a Project</a>
         </div>

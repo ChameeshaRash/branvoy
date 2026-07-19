@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Branvoy | Digital Marketing &amp; Website Development</title>
-  <meta name="description" content="Branvoy helps businesses grow online through strategic social media management and modern website design &amp; development. Based in Sri Lanka." />
-  <meta name="keywords" content="digital marketing Sri Lanka, social media management, website development, Branvoy" />
+  <title>Branvoy | Business Development &amp; Digital Strategy</title>
+  <meta name="description" content="Branvoy is a business development and digital strategy agency in Sri Lanka. We grow your online presence through strategic social media, content creation, and high-performing websites, so your business grows with it." />
+  <meta name="keywords" content="business development, digital strategy, social media management, website development, content creation, Branvoy, Sri Lanka" />
   <meta name="author" content="Chameesha Rashani" />
+  <meta name="theme-color" content="#0a0a0f" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://branvoy.com/" />
-  <meta property="og:title" content="Branvoy | Digital Marketing &amp; Website Development" />
-  <meta property="og:description" content="Branvoy helps businesses grow online through strategic social media management and modern website design &amp; development." />
+  <meta property="og:title" content="Branvoy | Business Development &amp; Digital Strategy" />
+  <meta property="og:description" content="We grow your online presence through strategic social media, content creation, and high-performing websites, so your business grows with it." />
   <meta property="og:image" content="https://branvoy.com/assets/images/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Branvoy | Digital Marketing &amp; Website Development" />
-  <meta name="twitter:description" content="Branvoy helps businesses grow online through strategic social media management and modern website design &amp; development." />
+  <meta name="twitter:title" content="Branvoy | Business Development &amp; Digital Strategy" />
+  <meta name="twitter:description" content="We grow your online presence through strategic social media, content creation, and high-performing websites, so your business grows with it." />
   <meta name="twitter:image" content="https://branvoy.com/assets/images/og-image.jpg" />
 
   <!-- Canonical & Robots -->
@@ -55,7 +56,18 @@
           "@type": "ImageObject",
           "url": "https://branvoy.com/assets/images/logo.svg"
         },
-        "description": "Branvoy is a digital marketing and website development agency based in Sri Lanka. We specialise in social media management, content creation, and high-performance website builds for businesses ready to grow online.",
+        "description": "Branvoy is a business development and digital strategy agency based in Sri Lanka. We help businesses grow their online presence through strategic social media, content creation, and high-performing websites.",
+        "slogan": "We grow your online presence, so your business grows with it.",
+        "knowsAbout": [
+          "Business Development",
+          "Digital Strategy",
+          "Social Media Management",
+          "Content Creation",
+          "Website Design & Development",
+          "Photography",
+          "Videography",
+          "Brand Identity"
+        ],
         "foundingDate": "2025",
         "founder": {
           "@type": "Person",
@@ -86,7 +98,7 @@
           "@type": "PostalAddress",
           "addressCountry": "LK"
         },
-        "description": "Digital marketing agency offering social media management, content creation, and website development.",
+        "description": "Business development and digital strategy agency offering social media management, content creation, and website development.",
         "priceRange": "$$",
         "openingHours": "Mo-Fr 09:00-18:00",
         "sameAs": [
@@ -124,7 +136,12 @@
   }
   </script>
 
-  <link rel="stylesheet" href="assets/css/style.css?v=30" />
+  <!-- Typography: Fraunces (display serif) + Space Grotesk (sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=42" />
 </head>
 <body>
 
@@ -157,13 +174,51 @@
 
   <!-- Hero -->
   <section class="hero">
+    <!-- Decorative layers -->
+    <div class="hero-bg" aria-hidden="true">
+      <span class="hero-orb hero-orb--a"></span>
+      <span class="hero-orb hero-orb--b"></span>
+      <span class="hero-grid"></span>
+      <svg class="hero-spark hero-spark--a" viewBox="0 0 100 100"><path d="M50 0C54 34 66 46 100 50 66 54 54 66 50 100 46 66 34 54 0 50 34 46 46 34 50 0Z"/></svg>
+      <svg class="hero-spark hero-spark--b" viewBox="0 0 100 100"><path d="M50 0C54 34 66 46 100 50 66 54 54 66 50 100 46 66 34 54 0 50 34 46 46 34 50 0Z"/></svg>
+      <svg class="hero-spark hero-spark--c" viewBox="0 0 100 100"><path d="M50 0C54 34 66 46 100 50 66 54 54 66 50 100 46 66 34 54 0 50 34 46 46 34 50 0Z"/></svg>
+    </div>
+
     <div class="wrap hero-content">
-      <span class="eyebrow">Digital Marketing &amp; Website Development</span>
-      <h1>We help brands grow <em>online</em> and look good doing it.</h1>
-      <p>Branvoy partners with businesses to build strategic social media presence and modern, high-performing websites that turn attention into trust, and trust into growth.</p>
-      <div class="btn-row">
+      <span class="eyebrow" data-reveal>Business Development &amp; Digital Strategy</span>
+      <h1 data-reveal>We grow your <em>online presence</em>, so your business grows with it.</h1>
+      <p data-reveal>Branvoy partners with businesses to build a strong digital presence. From strategic social media to high-performing websites, we turn attention into trust, and trust into measurable growth.</p>
+      <div class="btn-row" data-reveal>
         <a href="#" data-page="contact" class="btn btn-primary">Start a Project</a>
         <a href="#" data-page="services" class="btn btn-outline">View Services</a>
+      </div>
+      <div class="hero-meta" data-reveal>
+        <span>Based in Sri Lanka</span>
+        <span>Working Worldwide</span>
+        <span>Est. 2025</span>
+      </div>
+    </div>
+
+    <!-- Rotating badge -->
+    <div class="hero-badge" aria-hidden="true">
+      <svg viewBox="0 0 120 120">
+        <defs>
+          <path id="badgeCircle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
+        </defs>
+        <text class="hero-badge-text">
+          <textPath href="#badgeCircle">STRATEGY &#10022; CONTENT &#10022; DESIGN &#10022; DEVELOPMENT &#10022;</textPath>
+        </text>
+        <path class="hero-badge-star" d="M60 44C61.8 53.4 66.6 58.2 76 60 66.6 61.8 61.8 66.6 60 76 58.2 66.6 53.4 61.8 44 60 53.4 58.2 58.2 53.4 60 44Z" />
+      </svg>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+
+    <!-- Marquee band -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Business Development &#10022; Digital Strategy &#10022; Social Media Management &#10022; Content Creation &#10022; Web Design &amp; Development &#10022; Photography &#10022; Videography &#10022; Reels &amp; Video &#10022; Ad Campaigns &#10022; Brand Identity &#10022; Product Design &#10022; Tech Support &#10022; Business Development &#10022; Digital Strategy &#10022; Social Media Management &#10022; Content Creation &#10022; Web Design &amp; Development &#10022; Photography &#10022; Videography &#10022; Reels &amp; Video &#10022; Ad Campaigns &#10022; Brand Identity &#10022; Product Design &#10022; Tech Support &#10022;&nbsp;</span>
+        <span>Business Development &#10022; Digital Strategy &#10022; Social Media Management &#10022; Content Creation &#10022; Web Design &amp; Development &#10022; Photography &#10022; Videography &#10022; Reels &amp; Video &#10022; Ad Campaigns &#10022; Brand Identity &#10022; Product Design &#10022; Tech Support &#10022; Business Development &#10022; Digital Strategy &#10022; Social Media Management &#10022; Content Creation &#10022; Web Design &amp; Development &#10022; Photography &#10022; Videography &#10022; Reels &amp; Video &#10022; Ad Campaigns &#10022; Brand Identity &#10022; Product Design &#10022; Tech Support &#10022;&nbsp;</span>
       </div>
     </div>
   </section>
@@ -171,29 +226,29 @@
   <!-- How We Work -->
   <section class="process" id="process-home">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head" data-reveal>
         <span class="eyebrow">How We Work</span>
-        <h2>A simple, transparent process</h2>
+        <h2>A simple, transparent <em>process</em></h2>
         <p>No guesswork, just a clear path from first conversation to ongoing growth.</p>
       </div>
       <div class="process-grid">
-        <div class="process-step">
-          <div class="num">1</div>
+        <div class="process-step" data-reveal>
+          <div class="num">01</div>
           <h4>Discovery</h4>
           <p>We learn your brand, goals, and audience.</p>
         </div>
-        <div class="process-step">
-          <div class="num">2</div>
+        <div class="process-step" data-reveal>
+          <div class="num">02</div>
           <h4>Strategy</h4>
           <p>A custom plan for content, ads, or your website.</p>
         </div>
-        <div class="process-step">
-          <div class="num">3</div>
+        <div class="process-step" data-reveal>
+          <div class="num">03</div>
           <h4>Build &amp; Create</h4>
           <p>Content, campaigns, or development gets underway.</p>
         </div>
-        <div class="process-step">
-          <div class="num">4</div>
+        <div class="process-step" data-reveal>
+          <div class="num">04</div>
           <h4>Grow &amp; Report</h4>
           <p>Monthly insights and continuous optimization.</p>
         </div>
@@ -214,22 +269,25 @@
 
 <!-- ── Footer (always visible) ─────────────────────────────────── -->
 <footer>
-  <div class="logo">
-    <img src="assets/images/logo.svg" alt="Branvoy" class="logo-img logo-img--invert" width="120" height="36" loading="lazy" />
+  <div class="footer-inner">
+    <a href="#" data-page="home" class="logo footer-logo">
+      <img src="assets/images/logo.svg" alt="Branvoy" class="logo-img logo-img--invert" width="120" height="36" loading="lazy" />
+    </a>
+    <p class="footer-tag">Digital Marketing &amp; Website Development</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/Branvoy" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/bran.voy" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.86 1.07 1.15 1.76.25.64.42 1.37.47 2.43C21.99 8.94 22 9.28 22 12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43-.26.66-.6 1.21-1.15 1.76-.5.5-1.07.86-1.76 1.15-.64.25-1.37.42-2.43.47C15.06 21.99 14.72 22 12 22s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47-.66-.26-1.21-.6-1.76-1.15-.5-.5-.86-1.07-1.15-1.76-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76.5-.5 1.07-.86 1.76-1.15.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2zm0 1.8c-2.67 0-2.99.01-4.04.06-.86.04-1.33.18-1.64.31-.41.16-.71.35-1.02.66-.31.31-.5.61-.66 1.02-.13.31-.27.78-.31 1.64C4.28 8.5 4.27 8.83 4.27 10.5c-.01 1.67-.01 1.83 0 3.5 0 1.67.01 1.83.06 2.04.04.86.18 1.33.31 1.64.16.41.35.71.66 1.02.31.31.61.5 1.02.66.31.13.78.27 1.64.31 1.05.05 1.37.06 4.04.06s2.99-.01 4.04-.06c.86-.04 1.33-.18 1.64-.31.41-.16.71-.35 1.02-.66.31-.31.5-.61.66-1.02.13-.31.27-.78.31-1.64.05-1.05.06-1.37.06-4.04s-.01-2.99-.06-4.04c-.04-.86-.18-1.33-.31-1.64-.16-.41-.35-.71-.66-1.02-.31-.31-.61-.5-1.02-.66-.31-.13-.78-.27-1.64-.31C14.99 3.81 14.67 3.8 12 3.8zm0 3.45a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm0 1.8a2.95 2.95 0 100 5.9 2.95 2.95 0 000-5.9zm5.04-3.27a1.14 1.14 0 110 2.28 1.14 1.14 0 010-2.28z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/company/bran-voy/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Branvoy. All rights reserved.</p>
   </div>
-  <div>Digital Marketing &amp; Website Development</div>
-  <div class="social-links">
-    <a href="https://www.facebook.com/Branvoy" target="_blank" rel="noopener" aria-label="Facebook">
-      <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94z"/></svg>
-    </a>
-    <a href="https://www.instagram.com/bran.voy" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.86 1.07 1.15 1.76.25.64.42 1.37.47 2.43C21.99 8.94 22 9.28 22 12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43-.26.66-.6 1.21-1.15 1.76-.5.5-1.07.86-1.76 1.15-.64.25-1.37.42-2.43.47C15.06 21.99 14.72 22 12 22s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47-.66-.26-1.21-.6-1.76-1.15-.5-.5-.86-1.07-1.15-1.76-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76.5-.5 1.07-.86 1.76-1.15.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2zm0 1.8c-2.67 0-2.99.01-4.04.06-.86.04-1.33.18-1.64.31-.41.16-.71.35-1.02.66-.31.31-.5.61-.66 1.02-.13.31-.27.78-.31 1.64C4.28 8.5 4.27 8.83 4.27 10.5c-.01 1.67-.01 1.83 0 3.5 0 1.67.01 1.83.06 2.04.04.86.18 1.33.31 1.64.16.41.35.71.66 1.02.31.31.61.5 1.02.66.31.13.78.27 1.64.31 1.05.05 1.37.06 4.04.06s2.99-.01 4.04-.06c.86-.04 1.33-.18 1.64-.31.41-.16.71-.35 1.02-.66.31-.31.5-.61.66-1.02.13-.31.27-.78.31-1.64.05-1.05.06-1.37.06-4.04s-.01-2.99-.06-4.04c-.04-.86-.18-1.33-.31-1.64-.16-.41-.35-.71-.66-1.02-.31-.31-.61-.5-1.02-.66-.31-.13-.78-.27-1.64-.31C14.99 3.81 14.67 3.8 12 3.8zm0 3.45a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm0 1.8a2.95 2.95 0 100 5.9 2.95 2.95 0 000-5.9zm5.04-3.27a1.14 1.14 0 110 2.28 1.14 1.14 0 010-2.28z"/></svg>
-    </a>
-    <a href="https://www.linkedin.com/company/bran-voy/" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-    </a>
-  </div>
-  <div>&copy; 2026 Branvoy. All rights reserved.</div>
+  <div class="footer-word" aria-hidden="true">Branvoy</div>
 </footer>
 
 
@@ -252,10 +310,6 @@
   </button>
 </div>
 
-<!-- Custom cursor -->
-<div class="cursor-dot"  id="cursorDot"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
 <!-- Firebase Realtime Database (compat CDN — must load before main.js) -->
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
@@ -272,6 +326,6 @@
 </script>
 
 <!-- App entry point (ES module — auto-deferred, runs after DOM is ready) -->
-<script type="module" src="assets/js/main.js?v=30"></script>
+<script type="module" src="assets/js/main.js?v=42"></script>
 </body>
 </html>

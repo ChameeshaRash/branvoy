@@ -10,19 +10,22 @@ export function renderServices() {
   el.innerHTML = `
     <section id="services">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="eyebrow">What We Offer</span>
-          <h2>Services built for growth</h2>
+          <h2>Services built for <em>growth</em></h2>
           <p>From day-to-day social media management to full website builds, everything your brand needs to show up online.</p>
         </div>
 
         <div class="services-grid">
 
-          <div class="service-card">
-            <span class="tag">Monthly Retainer</span>
+          <div class="service-card" data-reveal>
+            <div class="service-top">
+              <span class="tag">Monthly Retainer</span>
+              <span class="service-index" aria-hidden="true">01</span>
+            </div>
             <h3>Social Media Management</h3>
             <ul>
-              <li>3 social media platforms (Instagram, Facebook, TikTok or your choice) — additional platforms available</li>
+              <li>3 social media platforms (Instagram, Facebook, TikTok or your choice), with additional platforms available</li>
               <li>2 to 4 posts/reels per week, on-site content creation</li>
               <li>Daily engagement-focused stories</li>
               <li>Social strategy &amp; competitor analysis</li>
@@ -36,8 +39,11 @@ export function renderServices() {
             </div>
           </div>
 
-          <div class="service-card">
-            <span class="tag">Project-Based</span>
+          <div class="service-card" data-reveal>
+            <div class="service-top">
+              <span class="tag">Project-Based</span>
+              <span class="service-index" aria-hidden="true">02</span>
+            </div>
             <h3>Website Design &amp; Development</h3>
             <ul>
               <li>Modern, responsive website design</li>
@@ -54,7 +60,7 @@ export function renderServices() {
 
         </div>
 
-        <div class="page-cta">
+        <div class="page-cta" data-reveal>
           <a href="#" data-page="contact" class="btn btn-primary">Get a Custom Quote</a>
         </div>
       </div>
