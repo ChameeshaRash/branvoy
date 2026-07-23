@@ -11,7 +11,7 @@ export class TestimonialCard {
    */
   static render({ initial, name, role, text }) {
     return `
-      <div class="testimonial-card">
+      <div class="testimonial-card" data-reveal>
         <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="testimonial-text">"${text}"</p>
         <div class="testimonial-author">

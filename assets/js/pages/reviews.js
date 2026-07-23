@@ -14,9 +14,9 @@ export function renderReviews() {
   el.innerHTML = `
     <section class="testimonials" id="testimonials">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="eyebrow">Client Feedback</span>
-          <h2>What our clients say</h2>
+          <h2>What our clients <em>say</em></h2>
           <p>Real words from the businesses and individuals we've had the privilege to work with.</p>
         </div>
         <div class="testimonials-grid">

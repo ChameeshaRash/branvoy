@@ -1,0 +1,35 @@
+# Branvoy
+
+> Branvoy is a business development and digital strategy agency based in Sri Lanka, working with clients worldwide. We grow your online presence through strategic social media, content creation, and high-performing websites, so your business grows with it.
+
+## About
+
+- Founded: 2025 by Chameesha Rashani
+- Location: Sri Lanka, serving clients worldwide
+- Focus: hospitality brands (surf camps, villas, restaurants), personal brands, and growing businesses
+
+## Services
+
+- Business development & digital strategy
+- Social media management: 3+ platforms (Instagram, Facebook, TikTok), 2 to 4 posts/reels per week, daily stories, weekly ad campaigns, competitor analysis, monthly reports
+- Website design & development: responsive, performance-optimized, booking and inquiry focused, custom features and integrations
+- Content creation & photography: on-site photo and video, filming, editing
+- Brand identity & product design
+- Tech support & account optimization
+
+## Contact
+
+- Phone: +94 76 006 5900
+- Email: chameesha@branvoy.com
+- Website: https://branvoy.com
+
+## Social
+
+- Facebook: https://www.facebook.com/Branvoy
+- Instagram: https://www.instagram.com/bran.voy
+- LinkedIn: https://www.linkedin.com/company/bran-voy/
+
+## Pages
+
+- Home: https://branvoy.com/
+- The site is a single-page app; sections include About, Services, Portfolio, Reviews, and Contact, all reachable from https://branvoy.com/
